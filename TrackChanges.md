@@ -9,3 +9,17 @@ At the forecaster.ipynb:
 * Implement a Backtest Validation cell to predict the last known game for each player.
 * Add Actual Points, Predicted Points, and Error columns to the evaluation output.
 * Configure the script to export the validation results to lgbm_2026_truth.csv.
+
+## - Match 3rd
+
+* Context-Aware Features: We added next_difficulty, next_is_home, and rolling_min.
+
+* The Scaling Experiment: We proved that LightGBM performs just as well (if not better) without the StandardScaler.
+
+* Chronological 5-Week Split: We successfully validated the model on the most recent data.
+
+* Error Analysis: We calculated the "Top Performer MAE" and saw the "Volatility Gap."
+
+* Visualizations: We built the QQ-Plot, Feature Importance (%), and the Interactive Player Widget.
+
+* The Leaderboard: You now have a live top-15 prediction for the next Gameweek.
