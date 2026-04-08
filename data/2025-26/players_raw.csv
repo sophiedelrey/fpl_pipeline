@@ -127,6 +127,7 @@ element,team,element_type,first_name,second_name,web_name
 722,3,3,Florentino Ibrain,Morris Luís,Florentino
 776,3,3,Oliver,Pimlott,Pimlott
 784,3,3,George,Brierley,Brierley
+820,3,3,Kian,McMahon-Brown,McMahon-Brown
 66,4,1,Norberto,Murara Neto,Neto
 67,4,1,Đorđe,Petrović,Petrović
 68,4,1,Will,Dennis,Dennis
@@ -213,6 +214,8 @@ element,team,element_type,first_name,second_name,web_name
 797,5,4,Kaye,Furo,Furo
 810,5,3,Luka,Bentt,Bentt
 819,5,2,Ollie,Shield,Shield
+823,5,2,Joshua,Stephenson,Stephenson
+824,5,2,Conor,McManus,McManus
 138,6,1,Jason,Steele,Steele
 139,6,1,Bart,Verbruggen,Verbruggen
 140,6,1,Tom,McGill,McGill
@@ -690,6 +693,8 @@ element,team,element_type,first_name,second_name,web_name
 800,17,3,Djiamgone Jocelin Ta,Bi,Jocelin.T
 812,17,1,Melker,Ellborg,Ellborg
 813,17,3,Nilson,Angulo,Angulo
+821,17,3,Jack,Whittaker,Whittaker
+822,17,3,Jaydon,Jones,Jones
 565,18,1,Guglielmo,Vicario,Vicario
 566,18,1,Brandon,Austin,Austin
 567,18,1,Antonín,Kinský,Kinsky
@@ -775,6 +780,7 @@ element,team,element_type,first_name,second_name,web_name
 791,19,4,Valentín,Castellanos,Taty
 802,19,3,Keiber,Lamadrid,Lamadrid
 815,19,2,Axel,Disasi,Disasi
+825,19,1,Finlay,Herrick,Herrick
 627,20,1,Sam,Johnstone,Johnstone
 628,20,1,José,Malheiro de Sá,José Sá
 629,20,1,Daniel,Bentley,Bentley
