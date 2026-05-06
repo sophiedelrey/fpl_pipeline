@@ -487,6 +487,7 @@ element,team,element_type,first_name,second_name,web_name
 746,12,3,Kieran,Morrison,Morrison
 760,12,2,Wellity,Lucky,Lucky
 830,12,4,Will,Wright,Wright
+832,12,2,Talla,Ndiaye,Ndiaye
 82,13,3,Antoine,Semenyo,Semenyo
 182,13,1,James,Trafford,Trafford
 260,13,2,Marc,Guéhi,Guéhi
@@ -829,3 +830,4 @@ element,team,element_type,first_name,second_name,web_name
 816,20,3,Angel,Gomes,Angel
 817,20,4,Adam,Armstrong,Armstrong
 828,20,1,Alfie,Brooks,Brooks
+831,20,1,Josh,Gracey,Gracey
