@@ -301,6 +301,8 @@ element,team,element_type,first_name,second_name,web_name
 789,7,1,Max,Merrick,Merrick
 803,7,1,Teddy,Sharman-Lowe,Sharman-Lowe
 829,7,3,Jesse,Derry,Derry
+833,7,3,Mathis,Eboué,Eboué
+834,7,3,Ryan,Kavuma-McQueen,Kavuma-McQueen
 253,8,1,Dean,Henderson,Henderson
 254,8,1,Walter,Benítez,Benitez
 255,8,1,Remi,Matthews,Matthews
@@ -449,6 +451,8 @@ element,team,element_type,first_name,second_name,web_name
 706,11,2,James,Justin,Justin
 741,11,4,Harry,Gray,Gray
 787,11,3,Sam,Chambers,Chambers
+837,11,2,Jayden,Lienou,Lienou
+838,11,3,Rhys,Chadwick,Chadwick
 366,12,1,Alisson,Becker,A.Becker
 367,12,1,Giorgi,Mamardashvili,Mamardashvili
 368,12,1,Ármin,Pécsi,Pécsi
@@ -648,6 +652,8 @@ element,team,element_type,first_name,second_name,web_name
 734,16,3,Dilane,Bakwa,Bakwa
 805,16,4,Lorenzo,Lucca,Lucca
 814,16,2,Luca,Netz,Netz
+835,16,3,Archie,Whitehall,Whitehall
+836,16,3,Jimmy,Sinclair,Sinclair
 528,17,1,Anthony,Patterson,Patterson
 529,17,1,Simon,Moore,Moore
 530,17,1,Blondy,Nna Noukeu,Nna Noukeu
