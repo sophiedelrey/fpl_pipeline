@@ -1,0 +1,366 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+.hub-root * { box-sizing: border-box; }
+.hub-root {
+    font-family: 'Poppins', sans-serif !important;
+    width: 820px;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    display: block !important;
+    visibility: visible !important;
+    background: #0e001a !important;
+}
+
+/* HEADER */
+.hub-root .hub-header {
+    background: linear-gradient(135deg, #37003c 0%, #1a0020 100%) !important;
+    padding: 14px 20px 12px 20px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #00ff87;
+}
+.hub-root .hub-title {
+    color: #00ff87 !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.hub-root .hub-badges { display: flex !important; gap: 8px; align-items: center; }
+.hub-root .hub-badge {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 20px; padding: 4px 12px;
+    font-size: 11px !important; font-weight: 700 !important; color: white !important;
+    display: inline-block !important;
+}
+.hub-root .hub-badge.green  { background: rgba(0,255,135,0.15) !important; border-color: #00ff87 !important; color: #00ff87 !important; }
+.hub-root .hub-badge.amber  { background: rgba(255,183,3,0.15)  !important; border-color: #ffb703 !important; color: #ffb703 !important; }
+.hub-root .hub-badge.purple { background: rgba(187,134,252,0.15) !important; border-color: #bb86fc !important; color: #bb86fc !important; }
+
+/* TRANSFER PANEL */
+.hub-root .transfer-panel {
+    background: linear-gradient(180deg, #2d0035 0%, #200028 100%) !important;
+    padding: 14px 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+    display: flex !important; align-items: center;
+    justify-content: space-between; gap: 12px;
+}
+.hub-root .transfer-panel-title {
+    color: rgba(255,255,255,0.5) !important;
+    font-size: 10px !important; font-weight: 700 !important;
+    text-transform: uppercase; margin-bottom: 6px;
+    display: block !important;
+}
+.hub-root .transfer-section { display: flex !important; flex-direction: column; align-items: flex-start; }
+.hub-root .ft-chips { display: flex !important; gap: 5px; }
+.hub-root .ft-chip {
+    width: 28px; height: 28px; border-radius: 6px;
+    background: rgba(255,255,255,0.08) !important;
+    border: 1.5px solid rgba(255,255,255,0.15) !important;
+    display: flex !important; align-items: center; justify-content: center;
+    font-size: 11px !important; font-weight: 800 !important;
+    color: rgba(255,255,255,0.3) !important;
+}
+.hub-root .ft-chip.active { background: rgba(0,255,135,0.2) !important; border-color: #00ff87 !important; color: #00ff87 !important; }
+.hub-root .ft-chip.extra  { background: rgba(255,183,3,0.15)  !important; border-color: #ffb703 !important; color: #ffb703 !important; }
+.hub-root .itb-display    { font-size: 22px !important; font-weight: 800 !important; color: #00ff87 !important; display: block !important; }
+.hub-root .itb-display.amber { color: #ffb703 !important; }
+.hub-root .itb-display.red   { color: #ff4b4b !important; }
+.hub-root .transfer-divider  { width: 1px; height: 44px; background: rgba(255,255,255,0.1); margin: 0 4px; }
+.hub-root .hit-info { font-size: 11px !important; color: rgba(255,255,255,0.45) !important; margin-top: 3px; display: block !important; }
+.hub-root .hit-info span { color: #ff6b6b !important; font-weight: 700 !important; }
+
+/* PITCH */
+.hub-root .pitch-container {
+    width: 100% !important;
+    height: 600px !important;
+    background-color: #4a9e4a !important;
+    background-image: linear-gradient(180deg,
+        #4a9e4a 0%,#52a852 6.25%,#4a9e4a 6.25%,#4a9e4a 12.5%,
+        #52a852 12.5%,#52a852 18.75%,#4a9e4a 18.75%,#4a9e4a 25%,
+        #52a852 25%,#52a852 31.25%,#4a9e4a 31.25%,#4a9e4a 37.5%,
+        #52a852 37.5%,#52a852 43.75%,#4a9e4a 43.75%,#4a9e4a 50%,
+        #52a852 50%,#52a852 56.25%,#4a9e4a 56.25%,#4a9e4a 62.5%,
+        #52a852 62.5%,#52a852 68.75%,#4a9e4a 68.75%,#4a9e4a 75%,
+        #52a852 75%,#52a852 81.25%,#4a9e4a 81.25%,#4a9e4a 87.5%,
+        #52a852 87.5%,#52a852 100%) !important;
+    position: relative !important;
+    border-bottom: 3px solid #37003c;
+    overflow: hidden !important;
+    display: block !important;
+}
+.hub-root .pitch-lines {
+    position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 50 L100 50 M50 0 L50 100' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3Ccircle cx='50' cy='50' r='8' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3Crect x='15' y='1' width='70' height='14' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3Crect x='30' y='1' width='40' height='6' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3Crect x='15' y='85' width='70' height='14' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3Crect x='30' y='93' width='40' height='6' stroke='white' stroke-width='0.3' fill='none' opacity='0.4'/%3E%3C/svg%3E");
+}
+.hub-root .player-row {
+    display: flex !important; justify-content: center;
+    width: 100%; position: absolute !important; gap: 4px; z-index: 10;
+}
+.hub-root .gk-row  { top: 18px !important; }
+.hub-root .def-row { top: 160px !important; }
+.hub-root .mid-row { top: 305px !important; }
+.hub-root .fwd-row { top: 448px !important; }
+
+/* PLAYER CARD */
+.hub-root .jersey-card {
+    width: 115px; display: flex !important;
+    flex-direction: column; align-items: center; position: relative;
+}
+.hub-root .shirt-kit {
+    width: 52px; height: 60px; position: relative;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    margin-bottom: 2px; display: block !important;
+}
+.hub-root .shirt-kit img { width: 100% !important; height: 100% !important; object-fit: contain !important; display: block !important; }
+.hub-root .captain-badge {
+    position: absolute; top: -6px; right: -12px;
+    background: #37003c !important; color: #00ff87 !important;
+    border-radius: 50%; width: 22px; height: 22px;
+    font-size: 11px; font-weight: 800;
+    display: flex !important; align-items: center; justify-content: center;
+    border: 2px solid #00ff87; z-index: 20;
+}
+.hub-root .vc-badge {
+    position: absolute; top: -6px; right: -12px;
+    background: #1a0035 !important; color: #e0e0e0 !important;
+    border-radius: 50%; width: 22px; height: 22px;
+    font-size: 8px; font-weight: 800;
+    display: flex !important; align-items: center; justify-content: center;
+    border: 2px solid #aaaaaa; z-index: 20;
+}
+.hub-root .info-label {
+    background: white !important; width: 92%; border-radius: 5px; overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3); border: 1px solid #e8e8e8;
+    text-align: center; display: block !important;
+}
+.hub-root .p-name  { font-weight: 700 !important; font-size: 10.5px !important; color: #021a36 !important; padding: 3px 2px 0 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block !important; }
+.hub-root .p-price { font-size: 9px !important; color: #888 !important; padding-bottom: 2px; display: block !important; }
+.hub-root .p-xp-bar { background: #00ff87 !important; font-weight: 800 !important; font-size: 10.5px !important; color: #021a36 !important; padding: 3px 0; border-top: 1px solid #ddd; display: block !important; }
+
+/* BENCH SECTION */
+.hub-root .bench-section {
+    background: linear-gradient(180deg, #1a0020 0%, #0d0015 100%) !important;
+    padding: 16px 20px 24px 20px;
+    border-top: 2px solid rgba(255,255,255,0.08);
+    display: block !important;
+}
+.hub-root .bench-title {
+    color: rgba(255,255,255,0.4) !important;
+    font-size: 10px !important; font-weight: 700 !important;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    text-align: center; margin-bottom: 14px;
+    display: block !important;
+}
+.hub-root .bench-row {
+    display: flex !important; justify-content: center; gap: 10px;
+}
+/* Bench cards slightly dimmed */
+.hub-root .bench-row .shirt-kit { opacity: 0.75 !important; }
+.hub-root .bench-row .p-xp-bar  { background: #2a0035 !important; color: #aaaaaa !important; }
+
+/* EMPTY STATE */
+.hub-root .hub-empty {
+    text-align: center; padding: 60px 20px;
+    color: #999 !important; background: #f8f8f8 !important;
+    font-size: 13px !important; display: block !important;
+}
+</style>
+
+        <div class="hub-root">
+            <div class="hub-header">
+                <div class="hub-title">&#9917; Forecaster Pro</div>
+                <div class="hub-badges">
+                    <div class="hub-badge">GW 37</div>
+                    <div class="hub-badge green">£96.3m spent</div>
+                    <div class="hub-badge green">15 / 15 Players</div>
+                </div>
+            </div>
+
+            
+    <div class="transfer-panel">
+        <div class="transfer-section">
+            <span class="transfer-panel-title">Free Transfers</span>
+            <div class="ft-chips"><div class="ft-chip active">1</div><div class="ft-chip ">2</div><div class="ft-chip ">3</div><div class="ft-chip ">4</div><div class="ft-chip ">5</div></div>
+            <span class="hit-info">Extra transfers cost <span>-4 pts</span> each</span>
+        </div>
+        <div class="transfer-divider"></div>
+        <div class="transfer-section">
+            <span class="transfer-panel-title">Money in the Bank</span>
+            <span class="itb-display amber">£0.5m</span>
+            <span class="hit-info">Budget for transfers</span>
+        </div>
+        <div class="transfer-divider"></div>
+        <div class="transfer-section" style="align-items:flex-end; flex:1; text-align:right;">
+            <span class="transfer-panel-title">Transfer Engine</span>
+            <div style="color:rgba(255,255,255,0.7); font-size:11px; font-weight:600;">
+                Run cells below pitch<br>to get recommendations
+            </div>
+        </div>
+    </div>
+            <div class="pitch-container">
+                <div class="pitch-lines"></div>
+                <div class="player-row gk-row"><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_90_1-66.webp" alt="Burnley" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Dúbravka</div>
+            <div class="p-price">£4.0m</div>
+            <div class="p-xp-bar">4.8 xP</div>
+        </div>
+    </div></div><div class="player-row def-row"><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_94-66.webp" alt="Brentford" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Pinnock</div>
+            <div class="p-price">£4.2m</div>
+            <div class="p-xp-bar">4.3 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_14-66.webp" alt="Liverpool" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Gomez</div>
+            <div class="p-price">£4.9m</div>
+            <div class="p-xp-bar">4.0 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_7-66.webp" alt="Aston Villa" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Pau</div>
+            <div class="p-price">£4.3m</div>
+            <div class="p-xp-bar">3.5 xP</div>
+        </div>
+    </div></div><div class="player-row mid-row"><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_1-66.webp" alt="Man Utd" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Cunha</div>
+            <div class="p-price">£8.1m</div>
+            <div class="p-xp-bar">6.3 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_1-66.webp" alt="Man Utd" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">B.Fernandes</div>
+            <div class="p-price">£10.4m</div>
+            <div class="p-xp-bar">6.2 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_17-66.webp" alt="Nott'm Forest" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Gibbs-White</div>
+            <div class="p-price">£7.5m</div>
+            <div class="p-xp-bar">5.9 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_4-66.webp" alt="Newcastle" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            <div class="vc-badge">VC</div>
+        </div>
+        <div class="info-label">
+            <div class="p-name">Gordon</div>
+            <div class="p-price">£7.3m</div>
+            <div class="p-xp-bar">5.8 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_1-66.webp" alt="Man Utd" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Mbeumo</div>
+            <div class="p-price">£8.3m</div>
+            <div class="p-xp-bar">5.0 xP</div>
+        </div>
+    </div></div><div class="player-row fwd-row"><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_7-66.webp" alt="Aston Villa" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            <div class="captain-badge">C</div>
+        </div>
+        <div class="info-label">
+            <div class="p-name">Watkins</div>
+            <div class="p-price">£8.7m</div>
+            <div class="p-xp-bar">6.9 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_21-66.webp" alt="West Ham" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Bowen</div>
+            <div class="p-price">£7.7m</div>
+            <div class="p-xp-bar">5.6 xP</div>
+        </div>
+    </div></div>
+            </div>
+            
+            <div class="bench-section">
+                <span class="bench-title">&#11035; Bench</span>
+                <div class="bench-row"><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_36-66.webp" alt="Brighton" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Welbeck</div>
+            <div class="p-price">£6.4m</div>
+            <div class="p-xp-bar">4.9 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_4-66.webp" alt="Newcastle" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Trippier</div>
+            <div class="p-price">£4.9m</div>
+            <div class="p-xp-bar">3.4 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_17-66.webp" alt="Nott'm Forest" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">N.Williams</div>
+            <div class="p-price">£4.8m</div>
+            <div class="p-xp-bar">3.0 xP</div>
+        </div>
+    </div><div class="jersey-card">
+        <div class="shirt-kit">
+            <img src="https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_94_1-66.webp" alt="Brentford" onerror="this.src='https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_0-66.webp'" />
+            
+        </div>
+        <div class="info-label">
+            <div class="p-name">Kelleher</div>
+            <div class="p-price">£4.8m</div>
+            <div class="p-xp-bar">4.5 xP</div>
+        </div>
+    </div></div>
+            </div>
+        </div>
